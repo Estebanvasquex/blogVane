@@ -15,7 +15,7 @@ export default function page({params}: Props) {
 
   return (
 
-    <section className="font-mono bg-white container mx-auto px-5">
+    <section className=" bg-white container mx-auto px-5">
   <div className="flex flex-col items-center py-8">
     <div className="flex flex-col w-full mb-12 text-left">
       <div className="w-full mx-auto flex flex-col items-center">
@@ -27,11 +27,16 @@ export default function page({params}: Props) {
           alt="Picture of the author"     
         />
 
-        {currentPost?.text.split('\n\n').map((paragraph, index) => (
+
+<p className="text-gray-600">{}</p>
+
+
+{currentPost?.text.split('\n\n').map((paragraph, index) => (
               <p key={index} className="mx-auto text-base font-medium leading-relaxed text-gray-800 mt-4">
                 {paragraph}
               </p>
             ))}
+
       </div>
 
       <div className="p-4 mt-4 bg-white border rounded-lg w-full mx-auto lg:w-1/2">
