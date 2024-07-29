@@ -15,7 +15,7 @@ export default function page({params}: Props) {
 
   return (
 
-    <section className=" bg-white container mx-auto px-5">
+    <section className="font-sans bg-white container mx-auto px-5">
   <div className="flex flex-col items-center py-8">
     <div className="flex flex-col w-full mb-12 text-left">
       <div className="w-full mx-auto flex flex-col items-center">
