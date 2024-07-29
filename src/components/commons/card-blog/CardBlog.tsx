@@ -4,13 +4,13 @@ import React from 'react'
 interface CardBlogProps {
   title: string
   description: string
-  link: string
   image: string
   date: string
+  id: string
 }
 
 const CardBlog = (props: CardBlogProps ) => {
-  const { title, description, link, image, date } = props
+  const { title, description, image, date, id } = props
 /*
   src="/profile.png"
   width={243}
@@ -29,7 +29,7 @@ const CardBlog = (props: CardBlogProps ) => {
                 <h4 className="text-2xl font-semibold text-cyan-900">{title}</h4>
                 <p className="text-gray-600">{description}</p>
               </div>
-              <a href={link} className="block w-max text-cyan-600">Read more</a>
+              <a href={`/post/${id}`} className="block w-max text-cyan-600">Read more</a>
             </div>
           </div>
         </div>
