@@ -21,7 +21,7 @@ const CardBlog = (props: CardBlogProps ) => {
 
 
   return (
-<div className="p-1 rounded-xl group sm:flex space-x-6 shadow-xl hover:rounded-2xl  bg-[#6E7D75]">
+<div className="p-1 rounded-xl group sm:flex space-x-6 shadow-xl hover:rounded-2xl  bg-[#6E7D75] ">
           <img src={image} alt="art cover" loading="lazy" className="h-56 lg:h-full w-full lg:w-5/12  rounded-lg transition duration-500 group-hover:rounded-xl" />
           <div className="sm:w-7/12 pl-0 p-5">
             <div className="space-y-2">
