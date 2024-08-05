@@ -8,6 +8,7 @@ const dataCards = [
       image: 'https://res.cloudinary.com/dmzibpgwk/image/upload/v1721878435/blog_vane/pjbtupfvz3lnl3ibqodv.jpg'
 
     }
+
     
   ]
 
