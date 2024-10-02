@@ -62,8 +62,13 @@ export default function page({params}: Props) {
       </div>
 
       <div className="px-4 lg:px-0 mt-12 text-gray-00 max-w-screen-md mx-auto text-lg leading-relaxed">
-        <h3 className="text-xl font-semibold mb-2">Reflexión</h3>
-        <p className="pb-6">{currentPost?.reflection}</p>
+        <h3 className="text-xl font-semibold mb-2">Reflexión</h3> 
+        <div className="px-4 lg:px-0 mt-12 text-gray-00 max-w-screen-md mx-auto text-lg leading-relaxed">{currentPost?.reflection.split('\n\n').map((paragraph, index) => (
+              <p key={index}  className="pb-6">
+                {paragraph}
+              </p>
+            ))}
+      </div>
       </div>
 
 
@@ -75,39 +80,3 @@ export default function page({params}: Props) {
   )
 }
 
-/*
-<body>
-    <div className="container">
-        <div className="titulo">
-            <h1>{currentPost?.title}</h1>
-        </div>
-        <div className="foto">
-        <Image
-          src="https://res.cloudinary.com/dmzibpgwk/image/upload/v1722224079/blog_vane/sanson.jpg"
-          width={343}
-          height={316}
-          alt="Picture of the author"     
-        />
-        </div>
-        <div className="texto">
-            <div>{currentPost?.text.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="mx-auto text-base font-medium leading-relaxed text-gray-800 mt-4">
-                {paragraph}
-              </p>
-            ))}</div>
-        </div>
-        <div className="reflexion">
-            <p>Reflexión del autor...</p>
-        </div>
-        <div className="avatar">
-        <Image
-          src="https://res.cloudinary.com/dmzibpgwk/image/upload/v1722224079/blog_vane/sanson.jpg"
-          width={343}
-          height={316}
-          alt="Picture of the author"     
-        />
-        </div>
-    </div>
-</body>
-
-*/
